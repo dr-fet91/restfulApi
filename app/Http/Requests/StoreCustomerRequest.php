@@ -39,6 +39,5 @@ class StoreCustomerRequest extends FormRequest
                 'postal_code' => $this->postalCode,
             ]);
         }
-        
     }
 }
