@@ -9,6 +9,7 @@ use Illuminate\Database\Eloquent\Relations\HasMany;
 class Customer extends Model
 {
     use HasFactory;
+    protected $guarded = ['id'];
     public function invoices():HasMany{
         return $this->hasMany(Invoice::class);
     }
